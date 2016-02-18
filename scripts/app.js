@@ -1,7 +1,8 @@
 var canvas = $("canvas"),
 context    = canvas[0].getContext("2d"),
 color      = $(".selected").css("background-color")
-mouseDown  = false;
+mouseDown  = false,
+lastEvent = null;
 
 //When clicking on control list items
 $("#colors").on("click", "li", function(){
@@ -35,14 +36,22 @@ $("#addNewColor").on("click", function() {
 
 })
 
-canvas.mousedown(function(){
-	console.log("mouse is down");
-}).mousemove(function(){
-	console.log("mouse is moving");
+canvas.mousedown(function(e){
+	lastEvent = e;
+	mouseDown = true;
+}).mousemove(function(e){
+	if(mouseDown) {
+		context.beginPath();
+		context.moveTo(lastEvent.offsetX, lastEvent.offsetY);
+    context.lineTo(e.offsetX, e.offsetY);
+    context.strokeStyle = color;
+    context.stroke();
+    lastEvent = e;
+	}
 }).mouseup(function(){
-	console.log("mouse is up");
+	mouseDown = false;
 }).mouseleave(function(){
-	console.log("mouse left");
+	canvas.mouseup();
 })
 
 // //On mouse events on the canvas
