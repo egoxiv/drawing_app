@@ -39,18 +39,18 @@ li {
 }
 
 .selected {
-	border: 5px solid white;
+	border: 3px solid white;
 }
 
-#red {
+.red {
 	background-color: red;
 }
 
-#green {
+.green {
 	background-color: green;
 }
 
-#blue {
+.blue {
 	background-color: blue;
 }
 
@@ -73,6 +73,8 @@ button {
 	text-align: center;	
 	padding: 10px;
 	background-color: white;
+	display: none;
+	margin: 0 auto;
 }
 
 #newColor {
