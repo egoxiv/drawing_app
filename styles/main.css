@@ -1,0 +1,108 @@
+html, body {
+	background-color: tan;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+canvas {
+	border: 1px solid black;
+	display: block;
+	background-color: white;
+	height: 50%;
+	width: 75%;
+	margin: 0 auto;
+}
+
+.colorController {
+	text-align: center;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	border-radius: 100%;
+}
+
+.selected {
+	border: 5px solid white;
+}
+
+#red {
+	background-color: red;
+}
+
+#green {
+	background-color: green;
+}
+
+#blue {
+	background-color: blue;
+}
+
+button {
+	width: 200px;
+	height: 50px;
+	display: inline-block;
+	border-radius: 5px;
+	background-color: black;
+	border: none;
+	color: white;
+	font-size: 1.7em;
+	margin: 10px;
+}
+
+#colorSelect {
+	width: 69%;
+	border: 1px solid black;
+	display: inline-block;
+	text-align: center;	
+	padding: 10px;
+	background-color: white;
+}
+
+#newColor {
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	border: 1px solid black;
+	float: left;
+	margin: 0;
+}
+
+button#addNewColor {
+	display: block;
+	clear: both;
+	margin: 50px auto 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

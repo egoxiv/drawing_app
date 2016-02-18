@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Drawing App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/main.css">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <h1>Drawing App</h1>
+
+        <canvas></canvas>
+
+        <!-- Create RGB color palletes -->
+        <div class="colorController">
+
+        	<ul>
+        		<li id="red" class="selected"></li>
+        		<li id="green"></li>
+        		<li id="blue"></li>
+        	</ul>
+
+	        <button>New Color</button></br>
+
+	        <div id="colorSelect">
+
+	        	<span id="newColor"></span>
+
+	        	<div class="sliders">
+
+	        		<p>
+	        			<label for="red">Red</label>
+	        			<input id="red" name="red" type="range" min=0 max=255 value=0>
+	        		</p>
+	        		<p>
+	        			<label for="green">Green</label>
+	        			<input id="green" name="green" type="range" min=0 max=255 value=0>
+	        		</p>
+	        		<p>
+	        			<label for="blue">Blue</label>
+	        			<input id="blue" name="blue" type="range" min=0 max=255 value=0>
+	        		</p>
+
+	        	</div>
+
+	        	<button id="addNewColor">Add Color</button>
+
+	        </div>
+
+        </div>
+
+        <script src="scripts/jquery-1.11.3.min.js"></script>
+        <script src="scripts/script.js"></script>
+
+    </body>
+</html>
