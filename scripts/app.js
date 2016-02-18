@@ -14,5 +14,14 @@ $("#colors").on("click", "li", function(){
 })
 
 $("#toggleNewColor").on("click", function() {
+
 	$("#colorSelect").toggle();
+
+})
+
+$("input[type=range]").change(function() {
+	var r = $("#red").val();
+  var g = $("#green").val();
+  var b = $("#blue").val();
+  $("#newColor").css("background-color", "rgb(" + r + "," + g +", " + b + ")");
 })
