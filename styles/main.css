@@ -1,3 +1,5 @@
+/********** Base **********/
+
 html, body {
 	background-color: tan;
 	height: 100%;
@@ -6,18 +8,28 @@ html, body {
 	font-family: sans-serif;
 }
 
+
+
+/********** Headline **********/
+
 h1 {
 	text-align: center;
 }
+
+
+
+/********** Canvas **********/
 
 canvas {
 	border: 1px solid black;
 	display: block;
 	background-color: white;
-	/*height: 50%;
-	width: 75%;*/
 	margin: 0 auto;
 }
+
+
+
+/********** Color Palette **********/
 
 .colorController {
 	text-align: center;
@@ -54,6 +66,10 @@ li {
 	background-color: blue;
 }
 
+
+
+/********** Button **********/
+
 button {
 	width: 200px;
 	height: 50px;
@@ -65,6 +81,10 @@ button {
 	font-size: 1.7em;
 	margin: 10px;
 }
+
+
+
+/********** Color Selection **********/
 
 #colorSelect {
 	width: 69%;
